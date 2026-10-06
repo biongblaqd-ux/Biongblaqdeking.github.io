@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Biong Blaq De King | Official Website</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -15,23 +24,34 @@
     }
 
     header {
-      padding: 70px 20px;
+      padding: 80px 20px;
       background: linear-gradient(135deg, #000, #222);
     }
 
     h1 {
       font-size: 42px;
-      margin-bottom: 10px;
+      margin: 0 0 12px;
     }
 
     .tagline {
-      font-size: 20px;
       color: #f5c542;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .main-btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 30px;
+      background: #f5c542;
+      color: #111;
+      text-decoration: none;
       font-weight: bold;
     }
 
     section {
-      padding: 45px 20px;
+      padding: 50px 20px;
       max-width: 800px;
       margin: auto;
     }
@@ -39,126 +59,164 @@
     h2 {
       color: #f5c542;
       font-size: 30px;
+      margin-bottom: 25px;
     }
 
     .card {
-      background: #1d1d1d;
+      background: #1c1c1c;
       padding: 25px;
-      margin: 20px 0;
-      border-radius: 15px;
+      border-radius: 18px;
+      margin: 20px auto;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
 
-    a {
-      color: white;
+    .song-card {
+      background: #1c1c1c;
+      padding: 28px;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .song-card h3 {
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .song-card p {
+      margin: 8px 0;
+      color: #ccc;
+    }
+
+    .listen-btn,
+    .contact-btn {
+      display: block;
+      width: 85%;
+      max-width: 300px;
+      margin: 14px auto;
+      padding: 13px 20px;
+      border-radius: 30px;
+      background: #f5c542;
+      color: #111;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .button {
-      .button {
-  display: inline-block;
-  padding: 12px 22px;
-  margin: 8px;
-  background: #f5c542;
-  color: #111;
-  border-radius: 25px;
-}
+    .contact-card {
+      background: #1c1c1c;
+      padding: 28px;
+      border-radius: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
 
-.youtube {
-  background: #ff0000;
-  color: white;
-}
+    .contact-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
     }
 
     footer {
-      padding: 25px;
+      padding: 30px 20px;
       background: #000;
       color: #aaa;
-    
-song-card h2 {
-  margin-bottom: 10px;
-}
+      margin-top: 30px;
+    }
 
-.song-card p {
-  margin: 8px 0;
-}
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
 
-.listen-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  background: #f5c542;
-  color: #111;
-}
-  
-  
+      .tagline {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <section id="contact">
-  <h2>📩 Contact</h2>
-  <p>For music, promotions, collaborations and bookings, get in touch with Biong Blaq De King.</p>
+  <header>
+    <h1>Biong Blaq De King</h1>
 
-  <div class="contact-card">
-    <h3>🎤 Biong Blaq De King</h3>
-
-    <a href="https://www.facebook.com/l/6lp1kJRRR" target="_blank" class="contact-btn">
-      📘 Facebook
-    </a>
-
-    <a href="https://www.instagram.com/biong_blaq_de_king_?stkn=MXZ2MjhxdzRtNjFlMw==" target="_blank" class="contact-btn">
-      📸 Instagram
-    </a>
-
-    <a href="https://www.youtube.com/@BiongblaqDeking-y7f5b" target="_blank" class="contact-btn">
-      ▶️ YouTube
-    </a>
-  </div>
-
+    <p class="tagline">
+      Music • Vibes • Culture
     </p>
-  </section>
 
-  <section>
-    <h2>About</h2>
+    <a href="#music" class="main-btn">
+      🎵 Listen to My Music
+    </a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+
     <div class="card">
       <p>
-        Biong Blaq De King is an artist bringing music, culture and
-        creativity together. This is the official home for his music,
+        Biong Blaq De King is an artist bringing music,
+        culture and creativity together.
+        Welcome to the official home for my music,
         videos, updates and upcoming projects.
       </p>
     </div>
   </section>
 
-  <section>
+  <section id="music">
+    <h2>🎵 My Music</h2>
+
     <div class="song-card">
-  <h2>🎵 Only Gal Fi Mi</h2>
-  <p>Biong Blaq De King</p>
-  <p>🎧 Available on Audiomack</p>
+      <h3>Only Gal Fi Mi</h3>
 
-  <a href="https://audiomack.com/biongblaqd/song/yuh-di-only-gal-fi-mi?share-user-id=205513671"
-     target="_blank"
-     class="listen-btn">
-    ▶ Listen Now
-  </a>
-</div>
+      <p>Biong Blaq De King</p>
 
-<p><strong>Only Gal Fi Mi</strong></p>
+      <p>🎧 Available on Audiomack</p>
 
-<a href="https://audiomack.com/biongblaqd/song/yuh-di-only-gal-fi-mi?share-user-id=205513671"
-   target="_blank">
-  🎧 Listen on Audiomack
-</a>
+      <a
+        href="https://audiomack.com/biongblaqd/song/yuh-di-only-gal-fi-mi?share-user-id=205513671"
+        target="_blank"
+        class="listen-btn">
+        ▶ Listen Now
+      </a>
+    </div>
+  </section>
 
-  <section>
-    <h2>Connect</h2>
+  <section id="contact">
+    <h2>📩 Contact</h2>
 
-    <a class="button" <a class="button" href="https://www.youtube.com/@BiongblaqDeking-y7f5b">YouTube</a>
-    <a class="button" <a class="button" href="https://www.instagram.com/biong_blaq_de_king_/">Instagram</a
-    <a class="button" <a class="button" href="https://www.fb.com/l/6lp1kJRRR">Facebook</a>
+    <p>
+      For music, promotions, collaborations and bookings,
+      connect with Biong Blaq De King.
+    </p>
+
+    <div class="contact-card">
+
+      <h3>🎤 Biong Blaq De King</h3>
+
+      <a
+        href="https://www.fb.com/l/6lp1kJRRR"
+        target="_blank"
+        class="contact-btn">
+        📘 Facebook
+      </a>
+
+      <a
+        href="https://www.instagram.com/biong_blaq_de_king_"
+        target="_blank"
+        class="contact-btn">
+        📸 Instagram
+      </a>
+
+      <a
+        href="https://www.youtube.com/@BiongblaqDeking-y7f5b"
+        target="_blank"
+        class="contact-btn">
+        ▶️ YouTube
+      </a>
+
+    </div>
+  </section>
 
   <footer>
     © 2026 Biong Blaq De King • Official Website
